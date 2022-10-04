@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="Cuadro Texto" Height="450" Width="800" Icon="Imagenes\128 (2).ico">
+    <Grid KeyUp="Edad_KeyUp">
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="183,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="TextBox_KeyUp" Tag="Nombre del Cliente"/>
+        <TextBox x:Name="ApellidoTextBox" HorizontalAlignment="Left" Height="23" Margin="183,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="TextBox_KeyUp" Tag="Apellido del Cliente"/>
+        <TextBox x:Name="EdadTextBox" HorizontalAlignment="Left" Height="23" Margin="183,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,133,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,178,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,242,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top"/>
+        <TextBlock x:Name="NombreAyudaTextBlock" HorizontalAlignment="Left" Margin="426,136,0,0" TextWrapping="Wrap" Text="Nombre del Cliente" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock x:Name="ApellidoAyudaTextBlock" HorizontalAlignment="Left" Margin="426,181,0,0" TextWrapping="Wrap" Text="Apellido del Cliente" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock x:Name="EdadAyudaTextBlock" HorizontalAlignment="Left" Margin="426,245,0,0" TextWrapping="Wrap" Text="Edad Incorrecta" VerticalAlignment="Top" Foreground="#FFF90909" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
